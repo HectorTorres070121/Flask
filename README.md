@@ -33,7 +33,7 @@ All routes currently use Flask's default `GET` method.
 | --- | --- | --- |
 | `GET` | `/` | Returns the JSON string `"3D:RF:09:7F::"`. This is a fixed identifier and does not look up a router. |
 | `GET` | `/json/<mac>` | Uppercases the supplied path value, looks it up in `API.json`, prints the router's name, protocols, status, and VLANs to the server console, then returns the router `Name` as plain text. A missing identifier returns `MAC no encontrada` with HTTP `404`. |
-| `GET` | `/servidor_1` | Returns a JSON object containing the two static server records `0001` and `0002`. |
+| `GET` | `/servidor_1` | Returns a JSON object containing ten static server records, keyed from `0001` through `0010`. |
 
 ### Example URLs
 
@@ -45,6 +45,23 @@ All routes currently use Flask's default `GET` method.
 ### Router Data
 
 `API.json` is a top-level object keyed by MAC-like identifiers. Each router record contains `Name`, `Protocolos`, `estatus`, and `VLANs`. VLAN records may contain `Ports`, `Policies`, `ET`, `IP`, and `SSH`. The lookup is case-insensitive because the route converts the requested identifier to uppercase before searching. The returned success body is currently only the router name; the other fields are printed to the application console rather than returned to the caller.
+
+### Server Inventory
+
+`GET /servidor_1` returns a JSON object whose keys are server IDs and whose values contain `nombre`, `ip`, `politica`, and `estado`.
+
+| ID | Name | IP | Policy | Status |
+| --- | --- | --- | --- | --- |
+| `0001` | `Servidor-Web-01` | `192.168.1.50` | `Permitir-HTTP-HTTPS` | `Activo` |
+| `0002` | `BaseDeDatos-Master` | `192.168.1.51` | `Solo-Acceso-Interno` | `Activo` |
+| `0003` | `Servidor-Archivos-01` | `192.168.1.52` | `Solo-Acceso-Interno` | `Activo` |
+| `0004` | `Servidor-DNS-01` | `192.168.1.53` | `DNS-UDP-TCP` | `Activo` |
+| `0005` | `Servidor-Aplicaciones-01` | `192.168.1.54` | `Permitir-HTTP-HTTPS` | `Activo` |
+| `0006` | `Servidor-Backup-01` | `192.168.1.55` | `Solo-Acceso-Interno` | `Activo` |
+| `0007` | `Servidor-Monitoreo-01` | `192.168.1.56` | `Solo-Acceso-Interno` | `Activo` |
+| `0008` | `Servidor-Correo-01` | `192.168.1.57` | `Permitir-SMTP-IMAP` | `Activo` |
+| `0009` | `Servidor-Proxy-01` | `192.168.1.58` | `Filtrado-Web` | `Activo` |
+| `0010` | `Servidor-Desarrollo-01` | `192.168.1.59` | `Acceso-Desarrollo` | `Activo` |
 
 ## Route Map
 
@@ -61,7 +78,7 @@ flowchart TD
     Find -->|No| Missing[Return MAC no encontrada with HTTP 404]
 
     Client --> Servers[GET /servidor_1]
-    Servers --> Inventory[Return two static server records as JSON]
+    Servers --> Inventory[Return ten static server records as JSON]
 ```
 
 ## Git Branches

@@ -66,4 +66,4 @@ flowchart TD
 
 ## Git Branches
 
-At the time this reference was written, the checked-out local branch is `feature/FlaskV01`; the requested GitHub target is the existing remote branch `release`. The local repository had no commits or remote configured when inspected. Fetch and reconcile the existing `release` history before pushing this project's initial commit; do not force-push over it.
+At the time of initial setup, the checked-out local branch was `feature/FlaskV01`; the GitHub target was the existing `release` branch with one starter README commit. That remote history is retained when publishing this project to `release`.

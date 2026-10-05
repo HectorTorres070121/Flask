@@ -1,7 +1,10 @@
 {
   "3D:RF:09:7F:00:00": {
     "Name": "R0",
-    "Protocolos": ["OSPF", "STP"],
+    "Protocolos": [
+      "OSPF",
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
@@ -15,12 +18,21 @@
   },
   "3D:RF:09:7F:00:01": {
     "Name": "R1",
-    "Protocolos": ["OSPF", "STP"],
+    "Protocolos": [
+      "OSPF",
+      "STP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/1", "Gi0/2"],
-        "Policies": ["Allow-HTTP", "SSH-Only"],
+        "Ports": [
+          "Gi0/1",
+          "Gi0/2"
+        ],
+        "Policies": [
+          "Allow-HTTP",
+          "SSH-Only"
+        ],
         "ET": true,
         "IP": "192.168.10.1",
         "SSH": true
@@ -29,12 +41,19 @@
   },
   "3D:RF:09:7F:00:02": {
     "Name": "R2",
-    "Protocolos": ["BGP", "VRRP"],
+    "Protocolos": [
+      "BGP",
+      "VRRP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL10": {
-        "Ports": ["Gi0/1"],
-        "Policies": ["Deny-All-Inbound"],
+        "Ports": [
+          "Gi0/1"
+        ],
+        "Policies": [
+          "Deny-All-Inbound"
+        ],
         "ET": false,
         "IP": "192.168.20.1",
         "SSH": true
@@ -43,12 +62,20 @@
   },
   "3D:RF:09:7F:00:03": {
     "Name": "R3",
-    "Protocolos": ["RIP", "LACP"],
+    "Protocolos": [
+      "RIP",
+      "LACP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL20": {
-        "Ports": ["Fast0/1", "Fast0/2"],
-        "Policies": ["QoS-Voice"],
+        "Ports": [
+          "Fast0/1",
+          "Fast0/2"
+        ],
+        "Policies": [
+          "QoS-Voice"
+        ],
         "ET": true,
         "IP": "10.0.0.1",
         "SSH": false
@@ -57,7 +84,10 @@
   },
   "3D:RF:09:7F:00:04": {
     "Name": "R4",
-    "Protocolos": ["EIGRP", "STP"],
+    "Protocolos": [
+      "EIGRP",
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
@@ -71,12 +101,18 @@
   },
   "3D:RF:09:7F:00:05": {
     "Name": "R5",
-    "Protocolos": ["OSPF"],
+    "Protocolos": [
+      "OSPF"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL50": {
-        "Ports": ["Eth1"],
-        "Policies": ["Limit-Bandwidth"],
+        "Ports": [
+          "Eth1"
+        ],
+        "Policies": [
+          "Limit-Bandwidth"
+        ],
         "ET": false,
         "IP": "172.16.0.1",
         "SSH": true
@@ -85,12 +121,19 @@
   },
   "3D:RF:09:7F:00:06": {
     "Name": "R6",
-    "Protocolos": ["BGP", "OSPF"],
+    "Protocolos": [
+      "BGP",
+      "OSPF"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL100": {
-        "Ports": ["Gi0/0/1"],
-        "Policies": ["Isolate-VLAN"],
+        "Ports": [
+          "Gi0/0/1"
+        ],
+        "Policies": [
+          "Isolate-VLAN"
+        ],
         "ET": true,
         "IP": "10.100.0.1",
         "SSH": true
@@ -99,11 +142,15 @@
   },
   "3D:RF:09:7F:00:07": {
     "Name": "R7",
-    "Protocolos": ["STP"],
+    "Protocolos": [
+      "STP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Port1"],
+        "Ports": [
+          "Port1"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "192.168.1.7",
@@ -113,12 +160,20 @@
   },
   "3D:RF:09:7F:00:08": {
     "Name": "R8",
-    "Protocolos": ["ISIS", "LDP"],
+    "Protocolos": [
+      "ISIS",
+      "LDP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL30": {
-        "Ports": ["Gi1/0/1", "Gi1/0/2"],
-        "Policies": ["Core-Routing"],
+        "Ports": [
+          "Gi1/0/1",
+          "Gi1/0/2"
+        ],
+        "Policies": [
+          "Core-Routing"
+        ],
         "ET": true,
         "IP": "10.0.30.1",
         "SSH": true
@@ -127,12 +182,17 @@
   },
   "3D:RF:09:7F:00:09": {
     "Name": "R9",
-    "Protocolos": ["OSPF", "VRRP"],
+    "Protocolos": [
+      "OSPF",
+      "VRRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
         "Ports": [],
-        "Policies": ["DMZ-Policy"],
+        "Policies": [
+          "DMZ-Policy"
+        ],
         "ET": true,
         "IP": "192.168.10.9",
         "SSH": true
@@ -141,12 +201,18 @@
   },
   "3D:RF:09:7F:00:0A": {
     "Name": "R10",
-    "Protocolos": ["BGP"],
+    "Protocolos": [
+      "BGP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL40": {
-        "Ports": ["e0/0"],
-        "Policies": ["Filter-BGP"],
+        "Ports": [
+          "e0/0"
+        ],
+        "Policies": [
+          "Filter-BGP"
+        ],
         "ET": false,
         "IP": "172.20.1.1",
         "SSH": false
@@ -155,12 +221,18 @@
   },
   "3D:RF:09:7F:00:0B": {
     "Name": "R11",
-    "Protocolos": ["EIGRP"],
+    "Protocolos": [
+      "EIGRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL2": {
-        "Ports": ["Gi0/1"],
-        "Policies": ["Guest-Access"],
+        "Ports": [
+          "Gi0/1"
+        ],
+        "Policies": [
+          "Guest-Access"
+        ],
         "ET": true,
         "IP": "192.168.2.1",
         "SSH": true
@@ -169,12 +241,19 @@
   },
   "3D:RF:09:7F:00:0C": {
     "Name": "R12",
-    "Protocolos": ["OSPF", "STP"],
+    "Protocolos": [
+      "OSPF",
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL15": {
-        "Ports": ["Gi0/3"],
-        "Policies": ["SEC-Policy"],
+        "Ports": [
+          "Gi0/3"
+        ],
+        "Policies": [
+          "SEC-Policy"
+        ],
         "ET": true,
         "IP": "192.168.15.12",
         "SSH": true
@@ -183,7 +262,9 @@
   },
   "3D:RF:09:7F:00:0D": {
     "Name": "R13",
-    "Protocolos": ["RIPv2"],
+    "Protocolos": [
+      "RIPv2"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
@@ -197,12 +278,19 @@
   },
   "3D:RF:09:7F:00:0E": {
     "Name": "R14",
-    "Protocolos": ["BGP", "MPLS"],
+    "Protocolos": [
+      "BGP",
+      "MPLS"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL200": {
-        "Ports": ["TenGi0/1"],
-        "Policies": ["WAN-Optimization"],
+        "Ports": [
+          "TenGi0/1"
+        ],
+        "Policies": [
+          "WAN-Optimization"
+        ],
         "ET": true,
         "IP": "10.200.0.14",
         "SSH": true
@@ -211,12 +299,20 @@
   },
   "3D:RF:09:7F:00:0F": {
     "Name": "R15",
-    "Protocolos": ["OSPF", "LACP"],
+    "Protocolos": [
+      "OSPF",
+      "LACP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL5": {
-        "Ports": ["Eth2", "Eth3"],
-        "Policies": ["Trunk-Allow"],
+        "Ports": [
+          "Eth2",
+          "Eth3"
+        ],
+        "Policies": [
+          "Trunk-Allow"
+        ],
         "ET": true,
         "IP": "192.168.5.15",
         "SSH": true
@@ -225,11 +321,15 @@
   },
   "3D:RF:09:7F:00:10": {
     "Name": "R16",
-    "Protocolos": ["STP"],
+    "Protocolos": [
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/1"],
+        "Ports": [
+          "Gi0/1"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "192.168.10.16",
@@ -239,12 +339,19 @@
   },
   "3D:RF:09:7F:00:11": {
     "Name": "R17",
-    "Protocolos": ["EIGRP", "VRRP"],
+    "Protocolos": [
+      "EIGRP",
+      "VRRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL12": {
-        "Ports": ["Gi0/2"],
-        "Policies": ["High-Availability"],
+        "Ports": [
+          "Gi0/2"
+        ],
+        "Policies": [
+          "High-Availability"
+        ],
         "ET": true,
         "IP": "192.168.12.1",
         "SSH": true
@@ -253,12 +360,18 @@
   },
   "3D:RF:09:7F:00:12": {
     "Name": "R18",
-    "Protocolos": ["OSPF"],
+    "Protocolos": [
+      "OSPF"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL80": {
-        "Ports": ["Fast0/24"],
-        "Policies": ["IoT-Isolation"],
+        "Ports": [
+          "Fast0/24"
+        ],
+        "Policies": [
+          "IoT-Isolation"
+        ],
         "ET": false,
         "IP": "172.18.0.18",
         "SSH": true
@@ -267,12 +380,17 @@
   },
   "3D:RF:09:7F:00:13": {
     "Name": "R19",
-    "Protocolos": ["BGP", "STP"],
+    "Protocolos": [
+      "BGP",
+      "STP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
         "Ports": [],
-        "Policies": ["Default-Route"],
+        "Policies": [
+          "Default-Route"
+        ],
         "ET": true,
         "IP": "10.0.0.19",
         "SSH": true
@@ -281,11 +399,15 @@
   },
   "3D:RF:09:7F:00:14": {
     "Name": "R20",
-    "Protocolos": ["RIP"],
+    "Protocolos": [
+      "RIP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL25": {
-        "Ports": ["Eth0"],
+        "Ports": [
+          "Eth0"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "192.168.25.20",
@@ -295,12 +417,19 @@
   },
   "3D:RF:09:7F:00:15": {
     "Name": "R21",
-    "Protocolos": ["OSPF", "EIGRP"],
+    "Protocolos": [
+      "OSPF",
+      "EIGRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL33": {
-        "Ports": ["Gi0/4"],
-        "Policies": ["Redistribute-Route"],
+        "Ports": [
+          "Gi0/4"
+        ],
+        "Policies": [
+          "Redistribute-Route"
+        ],
         "ET": true,
         "IP": "10.33.0.21",
         "SSH": true
@@ -309,11 +438,17 @@
   },
   "3D:RF:09:7F:00:16": {
     "Name": "R22",
-    "Protocolos": ["STP", "LACP"],
+    "Protocolos": [
+      "STP",
+      "LACP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/1", "Gi0/2"],
+        "Ports": [
+          "Gi0/1",
+          "Gi0/2"
+        ],
         "Policies": [],
         "ET": true,
         "IP": "192.168.10.22",
@@ -323,12 +458,18 @@
   },
   "3D:RF:09:7F:00:17": {
     "Name": "R23",
-    "Protocolos": ["BGP"],
+    "Protocolos": [
+      "BGP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL500": {
-        "Ports": ["TenGi0/2"],
-        "Policies": ["ISP-Peer"],
+        "Ports": [
+          "TenGi0/2"
+        ],
+        "Policies": [
+          "ISP-Peer"
+        ],
         "ET": false,
         "IP": "189.200.1.23",
         "SSH": true
@@ -337,12 +478,19 @@
   },
   "3D:RF:09:7F:00:18": {
     "Name": "R24",
-    "Protocolos": ["OSPF", "VRRP"],
+    "Protocolos": [
+      "OSPF",
+      "VRRP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL10": {
-        "Ports": ["Gi0/1"],
-        "Policies": ["VRRP-Master"],
+        "Ports": [
+          "Gi0/1"
+        ],
+        "Policies": [
+          "VRRP-Master"
+        ],
         "ET": true,
         "IP": "192.168.10.24",
         "SSH": true
@@ -351,7 +499,9 @@
   },
   "3D:RF:09:7F:00:19": {
     "Name": "R25",
-    "Protocolos": ["ISIS"],
+    "Protocolos": [
+      "ISIS"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
@@ -365,12 +515,18 @@
   },
   "3D:RF:09:7F:00:1A": {
     "Name": "R26",
-    "Protocolos": ["EIGRP"],
+    "Protocolos": [
+      "EIGRP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL60": {
-        "Ports": ["Eth1/0"],
-        "Policies": ["Corp-Internal"],
+        "Ports": [
+          "Eth1/0"
+        ],
+        "Policies": [
+          "Corp-Internal"
+        ],
         "ET": true,
         "IP": "172.16.60.26",
         "SSH": true
@@ -379,12 +535,19 @@
   },
   "3D:RF:09:7F:00:1B": {
     "Name": "R27",
-    "Protocolos": ["OSPF", "STP"],
+    "Protocolos": [
+      "OSPF",
+      "STP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL70": {
-        "Ports": ["Gi0/5"],
-        "Policies": ["Block-P2P"],
+        "Ports": [
+          "Gi0/5"
+        ],
+        "Policies": [
+          "Block-P2P"
+        ],
         "ET": true,
         "IP": "192.168.70.27",
         "SSH": true
@@ -393,11 +556,15 @@
   },
   "3D:RF:09:7F:00:1C": {
     "Name": "R28",
-    "Protocolos": ["RIP"],
+    "Protocolos": [
+      "RIP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Fast0/1"],
+        "Ports": [
+          "Fast0/1"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "192.168.1.28",
@@ -407,12 +574,19 @@
   },
   "3D:RF:09:7F:00:1D": {
     "Name": "R29",
-    "Protocolos": ["BGP", "OSPF"],
+    "Protocolos": [
+      "BGP",
+      "OSPF"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL90": {
-        "Ports": ["Gi0/0/2"],
-        "Policies": ["Border-Filter"],
+        "Ports": [
+          "Gi0/0/2"
+        ],
+        "Policies": [
+          "Border-Filter"
+        ],
         "ET": true,
         "IP": "10.90.0.29",
         "SSH": true
@@ -421,12 +595,16 @@
   },
   "3D:RF:09:7F:00:1E": {
     "Name": "R30",
-    "Protocolos": ["VRRP"],
+    "Protocolos": [
+      "VRRP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
         "Ports": [],
-        "Policies": ["Backup-Router"],
+        "Policies": [
+          "Backup-Router"
+        ],
         "ET": true,
         "IP": "192.168.10.30",
         "SSH": true
@@ -435,11 +613,15 @@
   },
   "3D:RF:09:7F:00:1F": {
     "Name": "R31",
-    "Protocolos": ["STP"],
+    "Protocolos": [
+      "STP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL44": {
-        "Ports": ["Gi0/12"],
+        "Ports": [
+          "Gi0/12"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "10.44.0.31",
@@ -449,12 +631,20 @@
   },
   "3D:RF:09:7F:00:20": {
     "Name": "R32",
-    "Protocolos": ["OSPF", "LACP"],
+    "Protocolos": [
+      "OSPF",
+      "LACP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL100": {
-        "Ports": ["Gi1/1", "Gi1/2"],
-        "Policies": ["Trunk-Core"],
+        "Ports": [
+          "Gi1/1",
+          "Gi1/2"
+        ],
+        "Policies": [
+          "Trunk-Core"
+        ],
         "ET": true,
         "IP": "192.168.100.32",
         "SSH": true
@@ -463,7 +653,9 @@
   },
   "3D:RF:09:7F:00:21": {
     "Name": "R33",
-    "Protocolos": ["EIGRP"],
+    "Protocolos": [
+      "EIGRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
@@ -477,12 +669,18 @@
   },
   "3D:RF:09:7F:00:22": {
     "Name": "R34",
-    "Protocolos": ["BGP"],
+    "Protocolos": [
+      "BGP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL123": {
-        "Ports": ["Eth0/1"],
-        "Policies": ["AS-Path-Filter"],
+        "Ports": [
+          "Eth0/1"
+        ],
+        "Policies": [
+          "AS-Path-Filter"
+        ],
         "ET": false,
         "IP": "172.31.0.34",
         "SSH": true
@@ -491,12 +689,19 @@
   },
   "3D:RF:09:7F:00:23": {
     "Name": "R35",
-    "Protocolos": ["OSPF", "STP"],
+    "Protocolos": [
+      "OSPF",
+      "STP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL8": {
-        "Ports": ["Gi0/8"],
-        "Policies": ["VoIP-Priority"],
+        "Ports": [
+          "Gi0/8"
+        ],
+        "Policies": [
+          "VoIP-Priority"
+        ],
         "ET": true,
         "IP": "10.8.0.35",
         "SSH": true
@@ -505,11 +710,15 @@
   },
   "3D:RF:09:7F:00:24": {
     "Name": "R36",
-    "Protocolos": ["RIPv2"],
+    "Protocolos": [
+      "RIPv2"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Fast0/10"],
+        "Ports": [
+          "Fast0/10"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "192.168.1.36",
@@ -519,12 +728,19 @@
   },
   "3D:RF:09:7F:00:25": {
     "Name": "R37",
-    "Protocolos": ["ISIS", "OSPF"],
+    "Protocolos": [
+      "ISIS",
+      "OSPF"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL99": {
-        "Ports": ["Gi0/2"],
-        "Policies": ["Admin-Mgmt"],
+        "Ports": [
+          "Gi0/2"
+        ],
+        "Policies": [
+          "Admin-Mgmt"
+        ],
         "ET": true,
         "IP": "10.99.0.37",
         "SSH": true
@@ -533,7 +749,9 @@
   },
   "3D:RF:09:7F:00:26": {
     "Name": "R38",
-    "Protocolos": ["STP"],
+    "Protocolos": [
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL2": {
@@ -547,12 +765,19 @@
   },
   "3D:RF:09:7F:00:27": {
     "Name": "R39",
-    "Protocolos": ["VRRP", "BGP"],
+    "Protocolos": [
+      "VRRP",
+      "BGP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL300": {
-        "Ports": ["TenGi0/1"],
-        "Policies": ["Load-Balancer"],
+        "Ports": [
+          "TenGi0/1"
+        ],
+        "Policies": [
+          "Load-Balancer"
+        ],
         "ET": true,
         "IP": "10.300.0.39",
         "SSH": true
@@ -561,12 +786,19 @@
   },
   "3D:RF:09:7F:00:28": {
     "Name": "R40",
-    "Protocolos": ["EIGRP", "STP"],
+    "Protocolos": [
+      "EIGRP",
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/1"],
-        "Policies": ["Strict-ACL"],
+        "Ports": [
+          "Gi0/1"
+        ],
+        "Policies": [
+          "Strict-ACL"
+        ],
         "ET": false,
         "IP": "192.168.10.40",
         "SSH": true
@@ -575,11 +807,15 @@
   },
   "3D:RF:09:7F:00:29": {
     "Name": "R41",
-    "Protocolos": ["OSPF"],
+    "Protocolos": [
+      "OSPF"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL16": {
-        "Ports": ["Gi0/3"],
+        "Ports": [
+          "Gi0/3"
+        ],
         "Policies": [],
         "ET": true,
         "IP": "172.16.16.41",
@@ -589,12 +825,19 @@
   },
   "3D:RF:09:7F:00:2A": {
     "Name": "R42",
-    "Protocolos": ["LACP"],
+    "Protocolos": [
+      "LACP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Eth1", "Eth2"],
-        "Policies": ["EtherChannel"],
+        "Ports": [
+          "Eth1",
+          "Eth2"
+        ],
+        "Policies": [
+          "EtherChannel"
+        ],
         "ET": true,
         "IP": "192.168.10.42",
         "SSH": false
@@ -603,12 +846,19 @@
   },
   "3D:RF:09:7F:00:2B": {
     "Name": "R43",
-    "Protocolos": ["BGP", "EIGRP"],
+    "Protocolos": [
+      "BGP",
+      "EIGRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL50": {
-        "Ports": ["Gi0/6"],
-        "Policies": ["Egress-Rule"],
+        "Ports": [
+          "Gi0/6"
+        ],
+        "Policies": [
+          "Egress-Rule"
+        ],
         "ET": false,
         "IP": "10.50.0.43",
         "SSH": true
@@ -617,7 +867,9 @@
   },
   "3D:RF:09:7F:00:2C": {
     "Name": "R44",
-    "Protocolos": ["RIP"],
+    "Protocolos": [
+      "RIP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
@@ -631,12 +883,19 @@
   },
   "3D:RF:09:7F:00:2D": {
     "Name": "R45",
-    "Protocolos": ["OSPF", "VRRP"],
+    "Protocolos": [
+      "OSPF",
+      "VRRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL22": {
-        "Ports": ["Gi0/2"],
-        "Policies": ["Failover-Policy"],
+        "Ports": [
+          "Gi0/2"
+        ],
+        "Policies": [
+          "Failover-Policy"
+        ],
         "ET": true,
         "IP": "192.168.22.45",
         "SSH": true
@@ -645,12 +904,18 @@
   },
   "3D:RF:09:7F:00:2E": {
     "Name": "R46",
-    "Protocolos": ["STP"],
+    "Protocolos": [
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL10": {
-        "Ports": ["Fast0/5"],
-        "Policies": ["PortFast-Enable"],
+        "Ports": [
+          "Fast0/5"
+        ],
+        "Policies": [
+          "PortFast-Enable"
+        ],
         "ET": false,
         "IP": "10.10.0.46",
         "SSH": true
@@ -659,12 +924,16 @@
   },
   "3D:RF:09:7F:00:2F": {
     "Name": "R47",
-    "Protocolos": ["BGP"],
+    "Protocolos": [
+      "BGP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
         "Ports": [],
-        "Policies": ["BGP-Auth"],
+        "Policies": [
+          "BGP-Auth"
+        ],
         "ET": true,
         "IP": "172.25.0.47",
         "SSH": true
@@ -673,11 +942,16 @@
   },
   "3D:RF:09:7F:00:30": {
     "Name": "R48",
-    "Protocolos": ["OSPF", "STP"],
+    "Protocolos": [
+      "OSPF",
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL88": {
-        "Ports": ["Gi0/9"],
+        "Ports": [
+          "Gi0/9"
+        ],
         "Policies": [],
         "ET": true,
         "IP": "192.168.88.48",
@@ -687,12 +961,18 @@
   },
   "3D:RF:09:7F:00:31": {
     "Name": "R49",
-    "Protocolos": ["EIGRP"],
+    "Protocolos": [
+      "EIGRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/1"],
-        "Policies": ["Internal-Only"],
+        "Ports": [
+          "Gi0/1"
+        ],
+        "Policies": [
+          "Internal-Only"
+        ],
         "ET": false,
         "IP": "10.0.0.49",
         "SSH": false
@@ -701,12 +981,19 @@
   },
   "3D:RF:09:7F:00:32": {
     "Name": "R50",
-    "Protocolos": ["ISIS", "BGP"],
+    "Protocolos": [
+      "ISIS",
+      "BGP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL100": {
-        "Ports": ["TenGi0/4"],
-        "Policies": ["Core-Policy"],
+        "Ports": [
+          "TenGi0/4"
+        ],
+        "Policies": [
+          "Core-Policy"
+        ],
         "ET": true,
         "IP": "10.100.0.50",
         "SSH": true
@@ -715,7 +1002,9 @@
   },
   "3D:RF:09:7F:00:33": {
     "Name": "R51",
-    "Protocolos": ["OSPF"],
+    "Protocolos": [
+      "OSPF"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
@@ -729,12 +1018,19 @@
   },
   "3D:RF:09:7F:00:34": {
     "Name": "R52",
-    "Protocolos": ["RIPv2", "STP"],
+    "Protocolos": [
+      "RIPv2",
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL5": {
-        "Ports": ["Fast0/1"],
-        "Policies": ["Legacy-Support"],
+        "Ports": [
+          "Fast0/1"
+        ],
+        "Policies": [
+          "Legacy-Support"
+        ],
         "ET": false,
         "IP": "192.168.5.52",
         "SSH": false
@@ -743,12 +1039,18 @@
   },
   "3D:RF:09:7F:00:35": {
     "Name": "R53",
-    "Protocolos": ["BGP"],
+    "Protocolos": [
+      "BGP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL400": {
-        "Ports": ["Gi0/0/3"],
-        "Policies": ["Cloud-Connect"],
+        "Ports": [
+          "Gi0/0/3"
+        ],
+        "Policies": [
+          "Cloud-Connect"
+        ],
         "ET": true,
         "IP": "172.20.0.53",
         "SSH": true
@@ -757,12 +1059,19 @@
   },
   "3D:RF:09:7F:00:36": {
     "Name": "R54",
-    "Protocolos": ["VRRP", "EIGRP"],
+    "Protocolos": [
+      "VRRP",
+      "EIGRP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/2"],
-        "Policies": ["HSRP-Group"],
+        "Ports": [
+          "Gi0/2"
+        ],
+        "Policies": [
+          "HSRP-Group"
+        ],
         "ET": true,
         "IP": "10.0.0.54",
         "SSH": true
@@ -771,11 +1080,15 @@
   },
   "3D:RF:09:7F:00:37": {
     "Name": "R55",
-    "Protocolos": ["STP"],
+    "Protocolos": [
+      "STP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL30": {
-        "Ports": ["Eth3"],
+        "Ports": [
+          "Eth3"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "192.168.30.55",
@@ -785,12 +1098,20 @@
   },
   "3D:RF:09:7F:00:38": {
     "Name": "R56",
-    "Protocolos": ["OSPF", "LACP"],
+    "Protocolos": [
+      "OSPF",
+      "LACP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL12": {
-        "Ports": ["Gi0/1", "Gi0/2"],
-        "Policies": ["Aggregated-Link"],
+        "Ports": [
+          "Gi0/1",
+          "Gi0/2"
+        ],
+        "Policies": [
+          "Aggregated-Link"
+        ],
         "ET": true,
         "IP": "192.168.12.56",
         "SSH": true
@@ -799,7 +1120,9 @@
   },
   "3D:RF:09:7F:00:39": {
     "Name": "R57",
-    "Protocolos": ["EIGRP"],
+    "Protocolos": [
+      "EIGRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
@@ -813,12 +1136,19 @@
   },
   "3D:RF:09:7F:00:3A": {
     "Name": "R58",
-    "Protocolos": ["BGP", "OSPF"],
+    "Protocolos": [
+      "BGP",
+      "OSPF"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL66": {
-        "Ports": ["Gi0/7"],
-        "Policies": ["SEC-Log"],
+        "Ports": [
+          "Gi0/7"
+        ],
+        "Policies": [
+          "SEC-Log"
+        ],
         "ET": false,
         "IP": "172.16.66.58",
         "SSH": true
@@ -827,11 +1157,15 @@
   },
   "3D:RF:09:7F:00:3B": {
     "Name": "R59",
-    "Protocolos": ["RIP"],
+    "Protocolos": [
+      "RIP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Fast0/3"],
+        "Ports": [
+          "Fast0/3"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "192.168.1.59",
@@ -841,12 +1175,19 @@
   },
   "3D:RF:09:7F:00:3C": {
     "Name": "R60",
-    "Protocolos": ["STP", "VRRP"],
+    "Protocolos": [
+      "STP",
+      "VRRP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL20": {
-        "Ports": ["Gi0/10"],
-        "Policies": ["Redundant-Path"],
+        "Ports": [
+          "Gi0/10"
+        ],
+        "Policies": [
+          "Redundant-Path"
+        ],
         "ET": true,
         "IP": "10.20.0.60",
         "SSH": true
@@ -855,12 +1196,16 @@
   },
   "3D:RF:09:7F:00:3D": {
     "Name": "R61",
-    "Protocolos": ["OSPF"],
+    "Protocolos": [
+      "OSPF"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
         "Ports": [],
-        "Policies": ["Allow-HTTPS"],
+        "Policies": [
+          "Allow-HTTPS"
+        ],
         "ET": true,
         "IP": "192.168.10.61",
         "SSH": true
@@ -869,11 +1214,15 @@
   },
   "3D:RF:09:7F:00:3E": {
     "Name": "R62",
-    "Protocolos": ["ISIS"],
+    "Protocolos": [
+      "ISIS"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL77": {
-        "Ports": ["TenGi0/3"],
+        "Ports": [
+          "TenGi0/3"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "10.77.0.62",
@@ -883,12 +1232,19 @@
   },
   "3D:RF:09:7F:00:3F": {
     "Name": "R63",
-    "Protocolos": ["EIGRP", "STP"],
+    "Protocolos": [
+      "EIGRP",
+      "STP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/2"],
-        "Policies": ["Branch-Office"],
+        "Ports": [
+          "Gi0/2"
+        ],
+        "Policies": [
+          "Branch-Office"
+        ],
         "ET": true,
         "IP": "192.168.10.63",
         "SSH": true
@@ -897,12 +1253,18 @@
   },
   "3D:RF:09:7F:00:40": {
     "Name": "R64",
-    "Protocolos": ["BGP"],
+    "Protocolos": [
+      "BGP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL150": {
-        "Ports": ["Gi0/1"],
-        "Policies": ["Peer-Policy"],
+        "Ports": [
+          "Gi0/1"
+        ],
+        "Policies": [
+          "Peer-Policy"
+        ],
         "ET": true,
         "IP": "172.22.0.64",
         "SSH": true
@@ -911,7 +1273,10 @@
   },
   "3D:RF:09:7F:00:41": {
     "Name": "R65",
-    "Protocolos": ["OSPF", "RIP"],
+    "Protocolos": [
+      "OSPF",
+      "RIP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL3": {
@@ -925,12 +1290,20 @@
   },
   "3D:RF:09:7F:00:42": {
     "Name": "R66",
-    "Protocolos": ["LACP"],
+    "Protocolos": [
+      "LACP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Eth1", "Eth2", "Eth3"],
-        "Policies": ["LACP-Active"],
+        "Ports": [
+          "Eth1",
+          "Eth2",
+          "Eth3"
+        ],
+        "Policies": [
+          "LACP-Active"
+        ],
         "ET": true,
         "IP": "192.168.10.66",
         "SSH": true
@@ -939,11 +1312,16 @@
   },
   "3D:RF:09:7F:00:43": {
     "Name": "R67",
-    "Protocolos": ["STP", "OSPF"],
+    "Protocolos": [
+      "STP",
+      "OSPF"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL40": {
-        "Ports": ["Gi0/4"],
+        "Ports": [
+          "Gi0/4"
+        ],
         "Policies": [],
         "ET": true,
         "IP": "192.168.40.67",
@@ -953,12 +1331,16 @@
   },
   "3D:RF:09:7F:00:44": {
     "Name": "R68",
-    "Protocolos": ["EIGRP"],
+    "Protocolos": [
+      "EIGRP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
         "Ports": [],
-        "Policies": ["Block-Telnet"],
+        "Policies": [
+          "Block-Telnet"
+        ],
         "ET": false,
         "IP": "10.0.0.68",
         "SSH": true
@@ -967,11 +1349,15 @@
   },
   "3D:RF:09:7F:00:45": {
     "Name": "R69",
-    "Protocolos": ["VRRP"],
+    "Protocolos": [
+      "VRRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL9": {
-        "Ports": ["Fast0/9"],
+        "Ports": [
+          "Fast0/9"
+        ],
         "Policies": [],
         "ET": true,
         "IP": "192.168.9.69",
@@ -981,12 +1367,19 @@
   },
   "3D:RF:09:7F:00:46": {
     "Name": "R70",
-    "Protocolos": ["BGP", "STP"],
+    "Protocolos": [
+      "BGP",
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL100": {
-        "Ports": ["Gi0/0/1"],
-        "Policies": ["Outbound-Filter"],
+        "Ports": [
+          "Gi0/0/1"
+        ],
+        "Policies": [
+          "Outbound-Filter"
+        ],
         "ET": true,
         "IP": "172.16.100.70",
         "SSH": true
@@ -995,11 +1388,15 @@
   },
   "3D:RF:09:7F:00:47": {
     "Name": "R71",
-    "Protocolos": ["OSPF"],
+    "Protocolos": [
+      "OSPF"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/1"],
+        "Ports": [
+          "Gi0/1"
+        ],
         "Policies": [],
         "ET": true,
         "IP": "192.168.10.71",
@@ -1009,7 +1406,9 @@
   },
   "3D:RF:09:7F:00:48": {
     "Name": "R72",
-    "Protocolos": ["RIPv2"],
+    "Protocolos": [
+      "RIPv2"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL14": {
@@ -1023,12 +1422,20 @@
   },
   "3D:RF:09:7F:00:49": {
     "Name": "R73",
-    "Protocolos": ["EIGRP", "LACP"],
+    "Protocolos": [
+      "EIGRP",
+      "LACP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL21": {
-        "Ports": ["Eth1", "Eth2"],
-        "Policies": ["Trunk-Only"],
+        "Ports": [
+          "Eth1",
+          "Eth2"
+        ],
+        "Policies": [
+          "Trunk-Only"
+        ],
         "ET": true,
         "IP": "192.168.21.73",
         "SSH": true
@@ -1037,12 +1444,18 @@
   },
   "3D:RF:09:7F:00:4A": {
     "Name": "R74",
-    "Protocolos": ["BGP"],
+    "Protocolos": [
+      "BGP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/5"],
-        "Policies": ["Global-WAN"],
+        "Ports": [
+          "Gi0/5"
+        ],
+        "Policies": [
+          "Global-WAN"
+        ],
         "ET": true,
         "IP": "180.10.0.74",
         "SSH": true
@@ -1051,7 +1464,10 @@
   },
   "3D:RF:09:7F:00:4B": {
     "Name": "R75",
-    "Protocolos": ["OSPF", "VRRP"],
+    "Protocolos": [
+      "OSPF",
+      "VRRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL55": {
@@ -1065,12 +1481,18 @@
   },
   "3D:RF:09:7F:00:4C": {
     "Name": "R76",
-    "Protocolos": ["STP"],
+    "Protocolos": [
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Fast0/2"],
-        "Policies": ["BPDU-Guard"],
+        "Ports": [
+          "Fast0/2"
+        ],
+        "Policies": [
+          "BPDU-Guard"
+        ],
         "ET": true,
         "IP": "192.168.1.76",
         "SSH": true
@@ -1079,11 +1501,15 @@
   },
   "3D:RF:09:7F:00:4D": {
     "Name": "R77",
-    "Protocolos": ["ISIS"],
+    "Protocolos": [
+      "ISIS"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL80": {
-        "Ports": ["Gi1/0/1"],
+        "Ports": [
+          "Gi1/0/1"
+        ],
         "Policies": [],
         "ET": true,
         "IP": "172.28.0.77",
@@ -1093,12 +1519,17 @@
   },
   "3D:RF:09:7F:00:4E": {
     "Name": "R78",
-    "Protocolos": ["OSPF", "EIGRP"],
+    "Protocolos": [
+      "OSPF",
+      "EIGRP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
         "Ports": [],
-        "Policies": ["Internal-Routing"],
+        "Policies": [
+          "Internal-Routing"
+        ],
         "ET": false,
         "IP": "192.168.10.78",
         "SSH": false
@@ -1107,11 +1538,15 @@
   },
   "3D:RF:09:7F:00:4F": {
     "Name": "R79",
-    "Protocolos": ["RIP"],
+    "Protocolos": [
+      "RIP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL6": {
-        "Ports": ["Eth0"],
+        "Ports": [
+          "Eth0"
+        ],
         "Policies": [],
         "ET": true,
         "IP": "10.0.6.79",
@@ -1121,12 +1556,19 @@
   },
   "3D:RF:09:7F:00:50": {
     "Name": "R80",
-    "Protocolos": ["BGP", "VRRP"],
+    "Protocolos": [
+      "BGP",
+      "VRRP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL100": {
-        "Ports": ["TenGi0/1"],
-        "Policies": ["DC-Interconnect"],
+        "Ports": [
+          "TenGi0/1"
+        ],
+        "Policies": [
+          "DC-Interconnect"
+        ],
         "ET": true,
         "IP": "10.100.0.80",
         "SSH": true
@@ -1135,11 +1577,17 @@
   },
   "3D:RF:09:7F:00:51": {
     "Name": "R81",
-    "Protocolos": ["STP", "LACP"],
+    "Protocolos": [
+      "STP",
+      "LACP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/1", "Gi0/2"],
+        "Ports": [
+          "Gi0/1",
+          "Gi0/2"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "192.168.10.81",
@@ -1149,12 +1597,18 @@
   },
   "3D:RF:09:7F:00:52": {
     "Name": "R82",
-    "Protocolos": ["OSPF"],
+    "Protocolos": [
+      "OSPF"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL17": {
-        "Ports": ["Gi0/3"],
-        "Policies": ["Area0-Policy"],
+        "Ports": [
+          "Gi0/3"
+        ],
+        "Policies": [
+          "Area0-Policy"
+        ],
         "ET": true,
         "IP": "172.17.0.82",
         "SSH": true
@@ -1163,7 +1617,9 @@
   },
   "3D:RF:09:7F:00:53": {
     "Name": "R83",
-    "Protocolos": ["EIGRP"],
+    "Protocolos": [
+      "EIGRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
@@ -1177,12 +1633,18 @@
   },
   "3D:RF:09:7F:00:54": {
     "Name": "R84",
-    "Protocolos": ["BGP"],
+    "Protocolos": [
+      "BGP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL250": {
-        "Ports": ["Gi0/0/4"],
-        "Policies": ["Drop-Invalid-BGP"],
+        "Ports": [
+          "Gi0/0/4"
+        ],
+        "Policies": [
+          "Drop-Invalid-BGP"
+        ],
         "ET": false,
         "IP": "190.50.0.84",
         "SSH": true
@@ -1191,11 +1653,16 @@
   },
   "3D:RF:09:7F:00:55": {
     "Name": "R85",
-    "Protocolos": ["RIPv2", "OSPF"],
+    "Protocolos": [
+      "RIPv2",
+      "OSPF"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL4": {
-        "Ports": ["Fast0/4"],
+        "Ports": [
+          "Fast0/4"
+        ],
         "Policies": [],
         "ET": true,
         "IP": "10.0.4.85",
@@ -1205,7 +1672,9 @@
   },
   "3D:RF:09:7F:00:56": {
     "Name": "R86",
-    "Protocolos": ["STP"],
+    "Protocolos": [
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
@@ -1219,12 +1688,18 @@
   },
   "3D:RF:09:7F:00:57": {
     "Name": "R87",
-    "Protocolos": ["VRRP"],
+    "Protocolos": [
+      "VRRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL35": {
-        "Ports": ["Gi0/2"],
-        "Policies": ["VIP-Policy"],
+        "Ports": [
+          "Gi0/2"
+        ],
+        "Policies": [
+          "VIP-Policy"
+        ],
         "ET": false,
         "IP": "192.168.35.87",
         "SSH": true
@@ -1233,12 +1708,19 @@
   },
   "3D:RF:09:7F:00:58": {
     "Name": "R88",
-    "Protocolos": ["OSPF", "STP"],
+    "Protocolos": [
+      "OSPF",
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/1"],
-        "Policies": ["Default-Access"],
+        "Ports": [
+          "Gi0/1"
+        ],
+        "Policies": [
+          "Default-Access"
+        ],
         "ET": true,
         "IP": "10.0.0.88",
         "SSH": true
@@ -1247,7 +1729,9 @@
   },
   "3D:RF:09:7F:00:59": {
     "Name": "R89",
-    "Protocolos": ["EIGRP"],
+    "Protocolos": [
+      "EIGRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL92": {
@@ -1261,12 +1745,19 @@
   },
   "3D:RF:09:7F:00:5A": {
     "Name": "R90",
-    "Protocolos": ["BGP", "LDP"],
+    "Protocolos": [
+      "BGP",
+      "LDP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL1000": {
-        "Ports": ["TenGi0/5"],
-        "Policies": ["MPLS-VPN"],
+        "Ports": [
+          "TenGi0/5"
+        ],
+        "Policies": [
+          "MPLS-VPN"
+        ],
         "ET": true,
         "IP": "10.254.0.90",
         "SSH": true
@@ -1275,11 +1766,15 @@
   },
   "3D:RF:09:7F:00:5B": {
     "Name": "R91",
-    "Protocolos": ["OSPF"],
+    "Protocolos": [
+      "OSPF"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/6"],
+        "Ports": [
+          "Gi0/6"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "192.168.10.91",
@@ -1289,7 +1784,9 @@
   },
   "3D:RF:09:7F:00:5C": {
     "Name": "R92",
-    "Protocolos": ["RIP"],
+    "Protocolos": [
+      "RIP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL11": {
@@ -1303,12 +1800,19 @@
   },
   "3D:RF:09:7F:00:5D": {
     "Name": "R93",
-    "Protocolos": ["STP", "VRRP"],
+    "Protocolos": [
+      "STP",
+      "VRRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Fast0/1"],
-        "Policies": ["STP-RootGuard"],
+        "Ports": [
+          "Fast0/1"
+        ],
+        "Policies": [
+          "STP-RootGuard"
+        ],
         "ET": true,
         "IP": "192.168.1.93",
         "SSH": true
@@ -1317,11 +1821,16 @@
   },
   "3D:RF:09:7F:00:5E": {
     "Name": "R94",
-    "Protocolos": ["EIGRP", "OSPF"],
+    "Protocolos": [
+      "EIGRP",
+      "OSPF"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL45": {
-        "Ports": ["Gi0/3"],
+        "Ports": [
+          "Gi0/3"
+        ],
         "Policies": [],
         "ET": false,
         "IP": "172.16.45.94",
@@ -1331,12 +1840,16 @@
   },
   "3D:RF:09:7F:00:5F": {
     "Name": "R95",
-    "Protocolos": ["BGP"],
+    "Protocolos": [
+      "BGP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
         "Ports": [],
-        "Policies": ["External-BGP"],
+        "Policies": [
+          "External-BGP"
+        ],
         "ET": true,
         "IP": "201.15.0.95",
         "SSH": true
@@ -1345,11 +1858,16 @@
   },
   "3D:RF:09:7F:00:60": {
     "Name": "R96",
-    "Protocolos": ["LACP"],
+    "Protocolos": [
+      "LACP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL60": {
-        "Ports": ["Eth1", "Eth2"],
+        "Ports": [
+          "Eth1",
+          "Eth2"
+        ],
         "Policies": [],
         "ET": true,
         "IP": "192.168.60.96",
@@ -1359,12 +1877,19 @@
   },
   "3D:RF:09:7F:00:61": {
     "Name": "R97",
-    "Protocolos": ["OSPF", "STP"],
+    "Protocolos": [
+      "OSPF",
+      "STP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/2"],
-        "Policies": ["Allow-Mgmt"],
+        "Ports": [
+          "Gi0/2"
+        ],
+        "Policies": [
+          "Allow-Mgmt"
+        ],
         "ET": true,
         "IP": "10.0.0.97",
         "SSH": true
@@ -1373,7 +1898,9 @@
   },
   "3D:RF:09:7F:00:62": {
     "Name": "R98",
-    "Protocolos": ["ISIS"],
+    "Protocolos": [
+      "ISIS"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL88": {
@@ -1387,12 +1914,19 @@
   },
   "3D:RF:09:7F:00:63": {
     "Name": "R99",
-    "Protocolos": ["VRRP", "EIGRP"],
+    "Protocolos": [
+      "VRRP",
+      "EIGRP"
+    ],
     "estatus": "offline",
     "VLANs": {
       "VL1": {
-        "Ports": ["Gi0/1"],
-        "Policies": ["Core-Gateway"],
+        "Ports": [
+          "Gi0/1"
+        ],
+        "Policies": [
+          "Core-Gateway"
+        ],
         "ET": true,
         "IP": "192.168.10.99",
         "SSH": true
@@ -1401,14 +1935,55 @@
   },
   "3D:RF:09:7F:00:64": {
     "Name": "R100",
-    "Protocolos": ["OSPF", "BGP", "STP"],
+    "Protocolos": [
+      "OSPF",
+      "BGP",
+      "STP"
+    ],
     "estatus": "online",
     "VLANs": {
       "VL100": {
-        "Ports": ["Gi0/0/1", "Gi0/0/2"],
-        "Policies": ["Full-Access-Policy"],
+        "Ports": [
+          "Gi0/0/1",
+          "Gi0/0/2"
+        ],
+        "Policies": [
+          "Full-Access-Policy"
+        ],
         "ET": true,
         "IP": "10.100.0.100",
+        "SSH": true
+      }
+    }
+  },
+  "AA:BB:CC:DD:EE:FF": {
+    "Name": "bravus",
+    "Protocolos": [
+      "STP",
+      "ST"
+    ],
+    "estatus": "online",
+    "VLANs": {
+      "VL10": {
+        "Ports": [
+          "g0/1"
+        ],
+        "Policies": [
+          "ALLOW_ALL"
+        ],
+        "ET": true,
+        "IP": "192.168.2.1",
+        "SSH": true
+      },
+      "nko": {
+        "Ports": [
+          "a09"
+        ],
+        "Policies": [
+          "p0"
+        ],
+        "ET": true,
+        "IP": "192.168.90.1",
         "SSH": true
       }
     }
